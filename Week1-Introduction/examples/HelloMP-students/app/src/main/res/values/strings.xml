@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">HelloMP</string>
+
+    <!-- menu items -->
+    <string name="action_settings">My Settings</string>
+    <string name="action_about">About Course</string>
+
+    <!-- activities titles -->
+    <string name="title_activity_about_course">about course</string>
+    <string name="title_activity_course_outline">course outline</string>
+
+    <string name="course_outline">course outline</string>
+    <string name="submit">Submit</string>
+
+    <string name="welcome_msg">Hello World! Enter your name in the text box</string>
+    <string name="welcome_student_msg">Hi %s, welcome to mobile programming course</string>
+
+    <string name="alter_student_name">student</string>
+
+
+</resources>
