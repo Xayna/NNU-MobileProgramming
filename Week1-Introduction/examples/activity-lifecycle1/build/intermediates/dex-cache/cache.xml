@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\User\Documents\NNU\MobileProgramming\Week1-Introduction\examples\activity-lifecycle1\app\libs\android-support-v13.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ecda966839090a41b29a9239d44bafc06fdadb87">
+        <dex dex="C:\Users\User\Documents\NNU\MobileProgramming\Week1-Introduction\examples\activity-lifecycle1\app\build\intermediates\transforms\dex\debug\folders\1000\2\android-support-v13_70a78c4e8293da4dadc279a23de2cfaa901ab11c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\User\Documents\NNU\MobileProgramming\Week1-Introduction\examples\activity-lifecycle1\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="854a96194542c078054988972b22860aef19191d">
+        <dex dex="C:\Users\User\Documents\NNU\MobileProgramming\Week1-Introduction\examples\activity-lifecycle1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_87a9633b7d072b05e9f2818df4caf1f7668e8cb6\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\User\Documents\NNU\MobileProgramming\Week1-Introduction\examples\activity-lifecycle1\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4f80bc7d490059da9e105de826121832c29d5a54">
+        <dex dex="C:\Users\User\Documents\NNU\MobileProgramming\Week1-Introduction\examples\activity-lifecycle1\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d0a5d48dc567f560dbfb72d8fe0ca86855de52bd\classes.dex" />
+    </item>
+
+</items>
