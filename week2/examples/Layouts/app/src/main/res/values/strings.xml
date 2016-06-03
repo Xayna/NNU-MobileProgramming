@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Layouts</string>
+    <string name="to">To</string>
+    <string name="subject">Subject</string>
+    <string name="message">Message</string>
+    <string name="send">Send</string>
+    <string name="title_activity_relative">RelativeActivity</string>
+    <string name="reminder">Reminder</string>
+    <string name="done">Done</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_linear">Linear Activity</string>
+    <string name="action_relative">Relative Activity</string>
+    <string name="action_listview">list view</string>
+    <string name="action_gridView">Grid View</string>
+
+    <string-array name="spinner_colors">
+        <item>red</item>
+        <item>blue</item>
+        <item>green</item>
+        <item>white</item>
+    </string-array>
+</resources>

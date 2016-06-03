@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="edu.nnu.mp.hellomp.MainActivity">
+    <item
+        android:id="@+id/action_linear"
+        android:orderInCategory="100"
+        android:title="@string/action_linear"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_relative"
+        android:orderInCategory="100"
+        android:title="@string/action_relative"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_listview"
+        android:orderInCategory="100"
+        android:title="@string/action_listview"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_gridView"
+        android:orderInCategory="100"
+        android:title="@string/action_gridView"
+        app:showAsAction="never" />
+
+</menu>
