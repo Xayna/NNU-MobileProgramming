@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SharePreferencesExample</string>
+    <string name="sys_lang">System Language</string>
+    <string name="allow_wifi">Access WIFI</string>
+    <string name="enable_wifi">Enable WIFI</string>
+    <string name="allow_notification">Allow notification</string>
+
+    <string-array name="array_sys_lang">
+        <item >English</item>
+        <item>Arabic</item>
+    </string-array>
+
+
+</resources>

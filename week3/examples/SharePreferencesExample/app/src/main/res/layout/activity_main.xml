@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.nnu.mp.sharepreferencesexample.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/sys_lang"
+        android:id="@+id/tv_lang"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+      />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp_lang"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tv_lang"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:entries="@array/array_sys_lang"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/enable_wifi"
+        android:id="@+id/tv_wifi"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tv_lang"
+        android:layout_marginTop="@dimen/textviews_vertical_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch_wifi"
+        android:layout_alignTop="@+id/tv_wifi"
+        android:layout_alignRight="@+id/sp_lang"
+        android:layout_alignEnd="@+id/sp_lang"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/allow_notification"
+        android:id="@+id/tv_notification"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tv_wifi"
+        android:layout_marginTop="@dimen/textviews_vertical_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_notification"
+        android:layout_alignTop="@+id/tv_notification"
+        android:layout_alignRight="@+id/switch_wifi"
+        android:layout_alignEnd="@+id/switch_wifi"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
