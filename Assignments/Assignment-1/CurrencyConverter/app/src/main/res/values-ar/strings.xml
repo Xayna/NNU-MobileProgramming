@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+    <string name="lbl_amount_convert">ادخل القيمة</string>
+    <string name="swap">اعكس</string>
+    <string name="convert">حول</string>
+    <string name="default_amount">1</string>
+
+
+    <string name="base_currency">USD</string>
+    <string name="num_times_created"> created :</string>
+    <string name="num_times_resumed"> restored :</string>
+    <string name="enter_msg">مبلغ التحويل</string>
+    <string-array name="currencyValue">
+        <item>1</item>
+        <item>3.8676</item>
+        <item>0.7085</item>
+        <item>0.6932</item>
+        <item>0.8976</item>
+        <item>1.3801</item>
+
+    </string-array>
+    <string-array name="currenciesList" >
+        <item>USD</item>
+        <item>ILS</item>
+        <item>JOD</item>
+        <item>GBP</item>
+        <item>EUR</item>
+        <item>AUD</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="edu.nnu.mp.currencyconverter.MainActivity">
+
+    <TextView android:text="@string/lbl_amount_convert" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textColor="#ff50c9ac"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/textView"
+
+        >
+
+        <TableRow
+            android:layout_width="fill_parent">
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:id="@+id/et_amount"
+                android:hint="@string/enter_msg"
+                android:text="@string/default_amount"
+                android:padding="3dp"
+                />
+        </TableRow>
+
+        <TableRow  android:layout_width="fill_parent">
+            <Spinner
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp_from"
+                />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_swap"
+                android:contentDescription="@string/swap"
+                android:src="@mipmap/ic_swap_horiz_white_2x"
+                android:background="@color/colorAccent"
+                android:padding="2dp"
+              />
+
+            <Spinner
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/sp_to"
+                />
+
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/tv_convertedAmt"
+                android:textColor="#ff50c9ac"
+                android:textAlignment="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <Space
+
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                />
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/convert"
+                android:id="@+id/btn_convert"
+
+                />
+
+
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ListView
+                android:layout_weight="10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/lv_history"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                />
+
+                <RelativeLayout android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:id="@+id/created_tv"
+                        android:layout_alignTop="@+id/textView3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_toRightOf="@+id/space1"/>
+
+
+                    <Space
+                        android:id="@+id/space1"
+                        android:layout_width="10dp"
+                        android:layout_height="20dp"
+                        android:layout_alignTop="@+id/created_tv"
+                        android:layout_alignBottom="@+id/created_tv"
+                        android:layout_toRightOf="@+id/textView3"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/num_times_created"
+                        android:id="@+id/textView3"
+                        android:layout_above="@+id/textView5"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="5dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:id="@+id/resumed_tv"
+                        android:layout_alignTop="@+id/textView5"
+                        android:layout_centerHorizontal="true"
+                        android:layout_toRightOf="@+id/space2" />
+
+
+                    <Space
+                        android:id="@+id/space2"
+                        android:layout_width="10dp"
+                        android:layout_height="20dp"
+                        android:layout_alignTop="@+id/textView5"
+                        android:layout_alignBottom="@+id/textView5"
+                        android:layout_toRightOf="@+id/textView5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/num_times_resumed"
+                        android:id="@+id/textView5"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                         />
+
+
+
+                </RelativeLayout>
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+
+</RelativeLayout>
