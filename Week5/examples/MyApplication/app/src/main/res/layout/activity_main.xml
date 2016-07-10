@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.nnu.mp.rawsensors.MainActivity">
+
+    <TextView android:text="X:" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/xLabel" />
+
+    <TextView
+        android:text="Y:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/yLabel"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/xLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Z:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/zLabel"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/yLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Accuracy:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/accuracyLabel"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/zLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/x"
+        android:layout_above="@+id/yLabel"
+        android:layout_toRightOf="@+id/xLabel"
+        android:layout_toEndOf="@+id/xLabel"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/y"
+        android:layout_alignTop="@+id/yLabel"
+        android:layout_alignLeft="@+id/x"
+        android:layout_alignStart="@+id/x" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/z"
+        android:layout_alignBottom="@+id/zLabel"
+        android:layout_alignLeft="@+id/y"
+        android:layout_alignStart="@+id/y" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/accuracy"
+        android:layout_alignBottom="@+id/accuracyLabel"
+       android:layout_toRightOf="@id/accuracyLabel"
+        />
+</RelativeLayout>
