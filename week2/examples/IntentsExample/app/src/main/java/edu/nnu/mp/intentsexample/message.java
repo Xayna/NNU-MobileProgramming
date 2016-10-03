@@ -14,7 +14,7 @@ public class message extends AppCompatActivity {
         setContentView(R.layout.activity_message);
 
         TextView showMsg = (TextView) findViewById(R.id.tv_msg);
-/*
+
         Bundle bundle = getIntent().getExtras();
         String msg = bundle.getString(MainActivity.KEY_MSG);
 
@@ -24,11 +24,12 @@ public class message extends AppCompatActivity {
 
         setResult(RESULT_OK, i);
 
-*/
-        ///
+
+
 
         //finish();
 
+        /*
         Bundle bundle = getIntent().getExtras();
         String msg = bundle.getString("msg");
 
@@ -37,8 +38,8 @@ public class message extends AppCompatActivity {
         setResult(RESULT_OK, i);
 
         showMsg.setText(msg);
-
-       // finish();
+        */
+         // finish();
 
 
     }

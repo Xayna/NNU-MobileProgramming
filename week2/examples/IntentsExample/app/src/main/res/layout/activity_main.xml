@@ -58,18 +58,19 @@
         android:layout_height="wrap_content"
         android:text="get your age"
         android:id="@+id/btn_calculate"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/textView2"
-        android:layout_toEndOf="@+id/textView2"
-        android:layout_marginBottom="125dp" />
+        android:layout_above="@+id/btn_msg"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/et_msg"
-        android:layout_above="@+id/btn_calculate"
         android:layout_alignRight="@+id/et_year"
-        android:layout_alignEnd="@+id/et_year" />
+        android:layout_alignEnd="@+id/et_year"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/btn_msg"
+        android:layout_alignStart="@+id/btn_msg" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -77,18 +78,39 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Message"
         android:id="@+id/textView3"
-        android:layout_centerVertical="true"
-        android:layout_toLeftOf="@+id/et_year"
-        android:layout_toStartOf="@+id/et_year" />
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="58dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="Send Message"
         android:id="@+id/btn_msg"
         android:layout_marginBottom="61dp"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/btn_calculate"
-        android:layout_alignEnd="@+id/btn_calculate" />
+        android:layout_alignEnd="@+id/btn_calculate"
+        android:layout_alignLeft="@+id/btn_calculate"
+        android:layout_alignStart="@+id/btn_calculate" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="open camera"
+        android:id="@+id/btn_camera"
+        android:layout_alignTop="@+id/btn_calculate"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="open website"
+        android:id="@+id/btn_openSite"
+        android:layout_alignBottom="@+id/btn_msg"
+        android:layout_alignLeft="@+id/btn_camera"
+        android:layout_alignStart="@+id/btn_camera" />
 
 </RelativeLayout>
