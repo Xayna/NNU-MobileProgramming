@@ -113,4 +113,15 @@
         android:layout_alignLeft="@+id/btn_camera"
         android:layout_alignStart="@+id/btn_camera" />
 
+    <Button
+        android:text="Send Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_email"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btn_msg"
+        android:layout_alignEnd="@+id/btn_msg"
+        android:layout_alignLeft="@+id/btn_msg"
+        android:layout_alignStart="@+id/btn_msg" />
+
 </RelativeLayout>

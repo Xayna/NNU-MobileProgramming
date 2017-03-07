@@ -3,7 +3,9 @@
     package="edu.nnu.mp.layouts">
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission
+        android:name="android.permission.WRITE_CONTACTS"
+        android:maxSdkVersion="18" />
 
     <application
         android:allowBackup="true"
@@ -24,7 +26,12 @@
         <activity android:name=".RelativeActivity" />
         <activity android:name=".LinearActivity" />
         <activity android:name=".ListViewActivity" />
-        <activity android:name=".GridViewActivity"></activity>
+        <activity android:name=".GridViewActivity" />
+        <activity android:name=".FrameActivity" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

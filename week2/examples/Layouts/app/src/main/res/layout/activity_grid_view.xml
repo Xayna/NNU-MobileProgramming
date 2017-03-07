@@ -11,4 +11,4 @@ android:horizontalSpacing="10dp"
 android:stretchMode="columnWidth"
 android:gravity="center"
 tools:context="edu.nnu.mp.layouts.GridViewActivity"
-    />
+/>

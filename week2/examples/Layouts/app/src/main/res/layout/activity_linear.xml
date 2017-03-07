@@ -12,11 +12,15 @@ android:orientation="vertical" >
 <EditText
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="@string/to" />
+    android:hint="@string/to"
+   />
+
 <EditText
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:hint="@string/subject" />
+    android:hint="@string/subject"
+
+    />
 <EditText
     android:layout_width="match_parent"
     android:layout_height="0dp"
@@ -27,5 +31,7 @@ android:orientation="vertical" >
     android:layout_width="100dp"
     android:layout_height="wrap_content"
     android:layout_gravity="right"
-    android:text="@string/send" />
+    android:gravity="center"
+    android:text="@string/send"
+/>
 </LinearLayout>

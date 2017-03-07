@@ -15,8 +15,10 @@ public class MainActivity extends AppCompatActivity {
 
     public static final int CALCULATE_REQUEST_CODE= 200;
     public static final int MESSAGE_REQUEST_CODE = 10 ;
+    public static final int EMAIL_REQUEST_CODE= 30 ;
 
     public static final String KEY_MSG = "myKey" ;
+    public static final String KEY_FROM = "fromuser";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +36,32 @@ public class MainActivity extends AppCompatActivity {
         Button openSite = (Button) findViewById(R.id.btn_openSite);
         final Button camera = (Button)findViewById(R.id.btn_camera);
 
+       Button sendEmail = (Button)findViewById(R.id.btn_email);
 
+        sendEmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent
+                        (MainActivity.this ,email.class);
+                myIntent.putExtra
+                        (KEY_FROM, name_et.getText().toString());
+             //   startActivity (myIntent);
+                startActivityForResult(myIntent,EMAIL_REQUEST_CODE);
+
+            }
+        });
+        /*
+        sendEmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent emailActivity = new Intent(MainActivity.this , email.class);
+                emailActivity.putExtra(KEY_FROM , name_et.getText().toString());
+                startActivity(emailActivity);
+                startActivityForResult(emailActivity,EMAIL_REQUEST_CODE);
+
+            }
+        });
+        */
         //you can find more information about asset in
         //http://www.codejava.net/java-core/the-java-language/java-keyword-assert
         assert sendMsg != null;
@@ -83,7 +110,8 @@ public class MainActivity extends AppCompatActivity {
             {
                 Intent cameraIntent = new Intent();
                 //"android.media.action.IMAGE_CAPTURE"
-                cameraIntent.setAction(MediaStore.ACTION_IMAGE_CAPTURE);
+                cameraIntent.
+                        setAction(MediaStore.ACTION_IMAGE_CAPTURE);
                 startActivityForResult(cameraIntent , 0);
             }
         });
@@ -92,7 +120,8 @@ public class MainActivity extends AppCompatActivity {
         openSite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri uri = Uri.parse("https://sites.google.com/site/ntipfall2016/");
+                Uri uri = Uri.parse
+                        ("https://sites.google.com/site/ntipfall2016/");
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_VIEW);
                 intent.setData(uri);
@@ -105,7 +134,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onActivityResult(int requestCode , int resultCode, Intent data)
+    protected void onActivityResult
+            (int requestCode , int resultCode, Intent data)
     {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == CALCULATE_REQUEST_CODE)
@@ -121,6 +151,14 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getBaseContext(), str, Toast.LENGTH_LONG).show();
             }
             
+        }else if (requestCode == EMAIL_REQUEST_CODE)
+        {
+            if (resultCode == RESULT_OK ){
+                Toast.makeText
+                                (getBaseContext(),
+                                        "Your email is send successfuly" ,
+                                        Toast.LENGTH_LONG).show();
+            }
         }
     }
 }

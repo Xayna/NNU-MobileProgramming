@@ -16,13 +16,17 @@ public class RelativeActivity extends AppCompatActivity {
         Spinner sp_colors = (Spinner) findViewById(R.id.colors);
         Spinner sp_colors2 = (Spinner) findViewById(R.id.color2);
 
-         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.spinner_colors, android.R.layout.simple_spinner_item);
+         ArrayAdapter<CharSequence> adapter =
+                 ArrayAdapter.createFromResource(getBaseContext(),
+                R.array.spinner_colors,
+                         android.R.layout.simple_spinner_item);
 
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapter.setDropDownViewResource
+                (android.R.layout.simple_spinner_dropdown_item);
 
         sp_colors.setAdapter(adapter);
         sp_colors2.setAdapter(adapter);
+
 
 
     }
